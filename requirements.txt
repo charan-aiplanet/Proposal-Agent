@@ -7,6 +7,4 @@ weasyprint
 cairosvg
 markdown
 PyPDF2
-fitz
-frontend
 PyMuPDF
