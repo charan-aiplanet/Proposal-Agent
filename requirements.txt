@@ -3,3 +3,4 @@ langchain-community
 langchain_groq
 langchain_huggingface
 python-docx
+weasyprint
