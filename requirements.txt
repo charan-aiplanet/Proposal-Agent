@@ -5,3 +5,4 @@ langchain_huggingface
 python-docx
 weasyprint
 libpango1.0-0
+cairosvg
