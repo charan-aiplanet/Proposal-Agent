@@ -8,3 +8,4 @@ cairosvg
 markdown
 PyPDF2
 fitz
+frontend
