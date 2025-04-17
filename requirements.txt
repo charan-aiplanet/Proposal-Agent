@@ -5,3 +5,4 @@ langchain_huggingface
 python-docx
 weasyprint
 cairosvg
+markdown
