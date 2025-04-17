@@ -6,3 +6,4 @@ python-docx
 weasyprint
 cairosvg
 markdown
+PyPDF2
