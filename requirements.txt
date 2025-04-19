@@ -9,3 +9,4 @@ markdown
 PyPDF2
 PyMuPDF
 faiss-cpu
+pypdf
