@@ -549,7 +549,7 @@ with col1:
             st.warning("Please add requirements or upload knowledge base files first.")
         else:
             # Show progress message
-            with st.spinner(f"Creating knowledge base with {selected_embedding_model}..."):
+            with st.spinner(f"Creating Knowledge Base"):
                 try:
                     # Extract text from all knowledge base files
                     kb_texts = []
@@ -657,7 +657,7 @@ with col2:
                     # Get the current section to generate
                     current_section = st.session_state.section_generation["sections"][current_idx]
                     
-                    with st.spinner(f"Generating '{current_section['title']}' section with {selected_llm_model}..."):
+                    with st.spinner(f"Generating '{current_section['title']}' section "):
                         # Set up the Groq LLM
                         llm = ChatGroq(
                             model=selected_llm_model,
@@ -788,12 +788,6 @@ with col2:
                 os.unlink(docx_path)
             if os.path.exists(pdf_path):
                 os.unlink(pdf_path)
-
-        # Add option to view full proposal in a separate tab (not just in the expander)
-        if st.button("View Full Proposal"):
-            # Create a new tab with the full proposal
-            st.session_state.view_full_proposal = True
-            st.experimental_rerun()
 
 # Check if we should display the full proposal view
 if "view_full_proposal" in st.session_state and st.session_state.view_full_proposal:
